@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class RedHeadDuck {
+public class RedHeadDuck extends Duck {
+    @Override
+    public void display() {
+        System.out.println("I am a Red Headed Duck");
+    }
 }
