@@ -1,8 +1,8 @@
-package ExperimentalDesign;
+package NaiveDesign;
 
 public class GumballMachineEmulator {
     public static void main(String args[]) {
-        GumballMachine gumballMachine = new GumballMachine(2);
+        NaivelyDesignedGumballMachine gumballMachine = new NaivelyDesignedGumballMachine(2);
         gumballMachine.Dispense();
         gumballMachine.EjectQuarter();
         gumballMachine.InsertQuarter();
