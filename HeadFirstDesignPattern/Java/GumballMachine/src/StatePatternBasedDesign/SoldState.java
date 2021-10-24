@@ -1,6 +1,6 @@
-package ExperimentalDesign;
+package StatePatternBasedDesign;
 
-public class SoldState implements IGumballState{
+public class SoldState implements IGumballState {
 
     public GumballMachine gumballMachine;
 

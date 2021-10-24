@@ -1,4 +1,4 @@
-package NaiveDesign;
+package ExperimentalNaiveDesign;
 
 public class GumballMachineEmulator {
     public static void main(String args[]) {

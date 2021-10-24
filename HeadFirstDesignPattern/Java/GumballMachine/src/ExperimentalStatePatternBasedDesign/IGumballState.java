@@ -1,4 +1,4 @@
-package ExperimentalDesign;
+package ExperimentalStatePatternBasedDesign;
 
 public interface IGumballState {
     public void InsertQuarter();

@@ -1,4 +1,4 @@
-package ExperimentalDesign;
+package StatePatternBasedDesign;
 
 public class GumballMachine {
     public IGumballState state;

@@ -1,4 +1,4 @@
-package NaiveDesign;
+package ExperimentalNaiveDesign;
 
 public class NaivelyDesignedGumballMachine {
     public StateEnum state;

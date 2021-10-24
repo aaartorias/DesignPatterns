@@ -1,4 +1,4 @@
-package ExperimentalDesign;
+package ExperimentalStatePatternBasedDesign;
 
 public class GumballMachineEmulator {
     public static void main(String args[]) {

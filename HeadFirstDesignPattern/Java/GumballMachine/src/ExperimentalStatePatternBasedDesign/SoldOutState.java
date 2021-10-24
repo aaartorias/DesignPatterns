@@ -1,4 +1,4 @@
-package ExperimentalDesign;
+package ExperimentalStatePatternBasedDesign;
 
 public class SoldOutState implements IGumballState {
 

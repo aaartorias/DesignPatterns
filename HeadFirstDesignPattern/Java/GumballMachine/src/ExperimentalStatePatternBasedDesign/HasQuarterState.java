@@ -1,4 +1,4 @@
-package ExperimentalDesign;
+package ExperimentalStatePatternBasedDesign;
 
 public class HasQuarterState implements IGumballState {
 
