@@ -1,3 +1,5 @@
+package StatePatternBasedDesign;
+
 public class SoldOutState implements IGumballState {
 
     public GumballMachine gumballMachine;

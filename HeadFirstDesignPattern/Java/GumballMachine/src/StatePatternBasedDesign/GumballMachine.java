@@ -1,3 +1,5 @@
+package StatePatternBasedDesign;
+
 public class GumballMachine {
     public IGumballState state;
     public int gumballCount;

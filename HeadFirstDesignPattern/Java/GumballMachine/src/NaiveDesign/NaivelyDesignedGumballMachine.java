@@ -1,8 +1,10 @@
-public class BadlyDesignedGumballMachine {
+package NaiveDesign;
+
+public class NaivelyDesignedGumballMachine {
     public StateEnum state;
     public int gumBallCount;
 
-    public BadlyDesignedGumballMachine(int gumballCount) {
+    public NaivelyDesignedGumballMachine(int gumballCount) {
         this.gumBallCount = gumballCount;
         if (gumballCount > 0) {
             state = StateEnum.NO_QUARTER;
@@ -68,6 +70,7 @@ public class BadlyDesignedGumballMachine {
             System.out.println("Can't dispense. No gumball inside. Please come later!!!");
         }
     }
+
 }
 // Adding new state will open all the methods for changes. It becomes maintaining nightmare
 // as new states are added, the change has be made cross all the actions i.e. methods()

@@ -1,3 +1,5 @@
+package StatePatternBasedDesign;
+
 public class NoQuarterState implements IGumballState {
 
     public GumballMachine gumballMachine;

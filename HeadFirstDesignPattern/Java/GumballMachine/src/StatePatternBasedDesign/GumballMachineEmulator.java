@@ -1,6 +1,8 @@
-public class BadlyDesignedGumballMachineEmulator {
+package StatePatternBasedDesign;
+
+public class GumballMachineEmulator {
     public static void main(String args[]) {
-        BadlyDesignedGumballMachine gumballMachine = new BadlyDesignedGumballMachine(2);
+        GumballMachine gumballMachine = new GumballMachine(2);
         gumballMachine.Dispense();
         gumballMachine.EjectQuarter();
         gumballMachine.InsertQuarter();

@@ -1,3 +1,5 @@
+package StatePatternBasedDesign;
+
 public interface IGumballState {
     public void InsertQuarter();
     public void EjectQuarter();

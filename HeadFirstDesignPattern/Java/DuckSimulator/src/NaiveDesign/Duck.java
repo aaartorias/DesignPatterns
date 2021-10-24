@@ -1,3 +1,5 @@
+package NaiveDesign;
+
 public abstract class Duck {
     public void quack() {
         System.out.println("Quacking...");
