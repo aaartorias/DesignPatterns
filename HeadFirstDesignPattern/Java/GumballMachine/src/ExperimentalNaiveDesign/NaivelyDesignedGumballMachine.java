@@ -1,10 +1,10 @@
 package ExperimentalNaiveDesign;
 
-public class NaivelyDesignedGumballMachine {
+public class GumballMachine {
     public StateEnum state;
     public int gumBallCount;
 
-    public NaivelyDesignedGumballMachine(int gumballCount) {
+    public GumballMachine(int gumballCount) {
         this.gumBallCount = gumballCount;
         if (gumballCount > 0) {
             state = StateEnum.NO_QUARTER;
