@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package NaiveDesign;
-=======
-package ExperimentalNaiveDesign;
->>>>>>> 1d54513e0a1458260908e86edaa2f10bfe244b3c
 
 public class GumballMachine {
     public StateEnum state;
