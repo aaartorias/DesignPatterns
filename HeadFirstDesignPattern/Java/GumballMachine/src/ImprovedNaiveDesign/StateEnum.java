@@ -1,4 +1,4 @@
-package ExperimentalNaiveDesign;
+package ImprovedNaiveDesign;
 
 public enum StateEnum {
     NO_QUARTER,
