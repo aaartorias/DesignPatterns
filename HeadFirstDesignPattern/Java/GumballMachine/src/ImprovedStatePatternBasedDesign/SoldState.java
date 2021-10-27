@@ -1,4 +1,4 @@
-package ExperimentalStatePatternBasedDesign;
+package ImprovedStatePatternBasedDesign;
 
 public class SoldState implements IGumballState{
 
@@ -22,6 +22,6 @@ public class SoldState implements IGumballState{
 
     public void Dispense() {
         System.out.println("Dispensing gumball. Please collect your gumball!!!");
-        gumballMachine.rollGumballOut();
+        //gumballMachine.rollGumballOut();
     }
 }

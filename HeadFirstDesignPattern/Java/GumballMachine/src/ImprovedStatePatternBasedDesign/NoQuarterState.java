@@ -1,4 +1,4 @@
-package ExperimentalStatePatternBasedDesign;
+package ImprovedStatePatternBasedDesign;
 
 public class NoQuarterState implements IGumballState {
 
@@ -10,7 +10,7 @@ public class NoQuarterState implements IGumballState {
 
     public void InsertQuarter() {
         System.out.println("Quarter Inserted!!!");
-        gumballMachine.setState(gumballMachine.getHasQuarterState());
+        //gumballMachine.setState(gumballMachine.getHasQuarterState());
     }
 
     public void EjectQuarter() {
