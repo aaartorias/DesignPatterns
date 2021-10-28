@@ -1,6 +1,6 @@
 package ImprovedStatePatternBasedDesign;
 
-public class SoldOutState implements IGumballState {
+public class WinnerState implements IGumballState {
 
     public void InsertQuarter() {
         System.out.println("Can't insert quarter. No gumball inside. Please come later!!!");

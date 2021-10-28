@@ -2,15 +2,8 @@ package ImprovedStatePatternBasedDesign;
 
 public class NoQuarterState implements IGumballState {
 
-    public GumballMachine gumballMachine;
-
-    public NoQuarterState(GumballMachine gumballMachine) {
-        this.gumballMachine = gumballMachine;
-    }
-
     public void InsertQuarter() {
         System.out.println("Quarter Inserted!!!");
-        //gumballMachine.setState(gumballMachine.getHasQuarterState());
     }
 
     public void EjectQuarter() {

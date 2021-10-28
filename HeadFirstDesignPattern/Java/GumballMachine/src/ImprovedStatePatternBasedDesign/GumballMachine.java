@@ -1,6 +1,7 @@
 package ImprovedStatePatternBasedDesign;
 
 import java.util.HashMap;
+import java.util.Random;
 
 public class GumballMachine {
     private IGumballState state;
@@ -9,15 +10,18 @@ public class GumballMachine {
     private IGumballState hasQuarterState;
     private IGumballState soldState;
     private IGumballState soldOutState;
+    private IGumballState winnerState;
     private HashMap<String,HashMap<IGumballState,IGumballState>> transitionMap = new HashMap<String,HashMap<IGumballState,IGumballState>>();
+    Random randomWinner = new Random(System.currentTimeMillis());
 
     public GumballMachine(int gumballCount) {
-        noQuarterState = (IGumballState) new NoQuarterState(this);
-        hasQuarterState = (IGumballState) new HasQuarterState(this);
-        soldState = (IGumballState) new SoldState(this);
-        soldOutState = (IGumballState) new SoldOutState(this);
-        buildTransitionMap();
+        noQuarterState = (IGumballState) new NoQuarterState();
+        hasQuarterState = (IGumballState) new HasQuarterState();
+        soldState = (IGumballState) new SoldState();
+        soldOutState = (IGumballState) new SoldOutState();
+        winnerState = (IGumballState) new WinnerState();
 
+        buildTransitionMap();
         this.gumballCount = gumballCount;
 
         if (gumballCount > 0) {
@@ -57,6 +61,9 @@ public class GumballMachine {
         return soldOutState;
     }
 
+    public IGumballState getWinnerState() {
+        return winnerState;
+    }
     public void setState(IGumballState state) {
         this.state = state;
     }
@@ -85,12 +92,18 @@ public class GumballMachine {
         HashMap<IGumballState,IGumballState> stateMap = transitionMap.get("CrankHandle");
         if (stateMap.containsKey(state)) {
             state.Crank();
-            setState(stateMap.get(getHasQuarterState()));
+            int winner = randomWinner.nextInt(10);
+            if (winner == 0) {
+                setState(getWinnerState());
+            } else {
+                setState(stateMap.get(getHasQuarterState()));
+            }
         } else {
             System.out.println("Can't Crank Handle. Operation not permitted!!");
         }
     }
 
+    //TODO: need to add logic to handle Winner state
     public void Dispense() {
         HashMap<IGumballState,IGumballState> stateMap = transitionMap.get("Dispense");
         if (stateMap.containsKey(state)) {
@@ -108,6 +121,10 @@ public class GumballMachine {
         } else {
             setState(getSoldOutState());
         }
+    }
+
+    public void addGumballs(int count) {
+        gumballCount = gumballCount + count;
     }
 
 }

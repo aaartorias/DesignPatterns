@@ -2,12 +2,6 @@ package ImprovedStatePatternBasedDesign;
 
 public class SoldState implements IGumballState{
 
-    public GumballMachine gumballMachine;
-
-    public SoldState(GumballMachine gumballMachine) {
-        this.gumballMachine = gumballMachine;
-    }
-
     public void InsertQuarter() {
         System.out.println("Can't insert quarter. Gumball dispense in progress. Please wait!!!");
     }
