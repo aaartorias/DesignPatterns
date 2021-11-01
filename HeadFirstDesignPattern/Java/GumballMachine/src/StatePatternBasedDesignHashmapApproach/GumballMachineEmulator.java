@@ -1,4 +1,4 @@
-package ImprovedStatePatternBasedDesign;
+package StatePatternBasedDesignHashmapApproach;
 
 public class GumballMachineEmulator {
     public static void main(String args[]) {

@@ -1,4 +1,4 @@
-package ImprovedStatePatternBasedDesign;
+package StatePatternBasedDesignHashmapApproach;
 
 public interface IGumballState {
     public void InsertQuarter();

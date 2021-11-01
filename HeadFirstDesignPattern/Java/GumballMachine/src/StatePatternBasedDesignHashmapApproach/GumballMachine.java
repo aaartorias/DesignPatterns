@@ -1,4 +1,4 @@
-package ImprovedStatePatternBasedDesign;
+package StatePatternBasedDesignHashmapApproach;
 
 import java.util.HashMap;
 import java.util.Random;
@@ -30,7 +30,8 @@ public class GumballMachine {
             state = soldOutState;
         }
     }
-
+    // InsertQuarter - NoQuarter - HasQuarterState
+    //
     private void buildTransitionMap() {
         transitionMap.put("InsertQuarter",new HashMap<IGumballState, IGumballState>());
         transitionMap.get("InsertQuarter").put(getNoQuarterState(),getHasQuarterState());
@@ -103,7 +104,7 @@ public class GumballMachine {
         }
     }
 
-    //TODO: need to add logic to handle Winner state
+    //TODO: handle Winner state
     public void Dispense() {
         HashMap<IGumballState,IGumballState> stateMap = transitionMap.get("Dispense");
         if (stateMap.containsKey(state)) {

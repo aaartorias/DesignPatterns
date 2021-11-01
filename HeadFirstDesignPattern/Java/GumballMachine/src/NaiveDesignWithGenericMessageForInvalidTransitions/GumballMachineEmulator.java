@@ -1,4 +1,4 @@
-package ImprovedNaiveDesign;
+package NaiveDesignWithGenericMessageForInvalidTransitions;
 
 public class GumballMachineEmulator {
     public static void main(String args[]) {

@@ -1,4 +1,4 @@
-package ImprovedStatePatternBasedDesign;
+package StatePatternBasedDesignHashmapApproach;
 
 public class HasQuarterState implements IGumballState {
 

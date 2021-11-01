@@ -1,4 +1,4 @@
-package ImprovedNaiveDesign;
+package NaiveDesignWithGenericMessageForInvalidTransitions;
 
 public class GumballMachine {
     public StateEnum state;
