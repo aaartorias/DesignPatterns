@@ -1,4 +1,7 @@
-package StrategyBasedDesign;
+package StrategyBasedDesign.Ducks;
+
+import StrategyBasedDesign.FlyBehavior.FlyWithWings;
+import StrategyBasedDesign.QuackBehavior.Quack;
 
 public class MallardDuck extends Duck{
     public MallardDuck() {

@@ -1,4 +1,4 @@
-package StrategyBasedDesign;
+package StrategyBasedDesign.QuackBehavior;
 
 public class Quack implements IQuackBehavior{
     @Override

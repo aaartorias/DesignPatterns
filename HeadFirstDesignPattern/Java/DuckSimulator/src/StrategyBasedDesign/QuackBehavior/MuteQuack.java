@@ -1,4 +1,4 @@
-package StrategyBasedDesign;
+package StrategyBasedDesign.QuackBehavior;
 
 public class MuteQuack implements IQuackBehavior{
     @Override

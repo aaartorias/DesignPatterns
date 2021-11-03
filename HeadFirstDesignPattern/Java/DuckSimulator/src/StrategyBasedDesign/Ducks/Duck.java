@@ -1,4 +1,7 @@
-package StrategyBasedDesign;
+package StrategyBasedDesign.Ducks;
+
+import StrategyBasedDesign.FlyBehavior.IFlyBehavior;
+import StrategyBasedDesign.QuackBehavior.IQuackBehavior;
 
 public abstract class Duck {
     private IQuackBehavior quackBehavior;
