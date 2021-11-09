@@ -2,13 +2,17 @@ package Pizza;
 
 public class ChicagoStyleCheesePizza extends Pizza {
     public ChicagoStyleCheesePizza() {
-        super.setName("NY Style Sauce and Cheese Pizza");
-        super.setDough("Thin Crust Dough");
+        super.setName("Chicago Style Sauce and Cheese Pizza");
+        super.setDough("Thick Crust Dough");
         super.setSauce("Marinara Sauce");
-        super.addTopping("Grated Reggiano Cheese");
+        super.addTopping("Shredded Mozzarella Cheese");
     }
 
+    public void prepare() {
+        System.out.println("---------Creating Chicago Style Clam Pizza----------");
+        super.prepare();
+    }
     public void cut() {
-        System.out.println("Cutting pizza into square slices");
+        System.out.println("Cutting Chicago pizza into square slices");
     }
 }

@@ -2,7 +2,7 @@ package Pizza;
 
 public class NYStyleClamPizza extends Pizza {
     public NYStyleClamPizza() {
-        super.setName("Clam Pizza");
+        super.setName("Ny Style Clam Pizza");
         super.setDough("Thin Crust Dough");
         super.setSauce("Marinara Sauce");
         super.addTopping("Clam");
@@ -11,7 +11,7 @@ public class NYStyleClamPizza extends Pizza {
     }
 
     public void prepare() {
-        System.out.println("---------Creating Clam Pizza----------");
+        System.out.println("---------Creating NewYork Style Clam Pizza----------");
         super.prepare();
     }
 }

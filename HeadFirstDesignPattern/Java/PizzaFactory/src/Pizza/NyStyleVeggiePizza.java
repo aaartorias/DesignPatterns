@@ -2,7 +2,7 @@ package Pizza;
 
 public class NyStyleVeggiePizza extends Pizza {
     public NyStyleVeggiePizza() {
-        super.setName("Veggie Pizza");
+        super.setName("Ny Style Veggie Pizza");
         super.setDough("Thin Crust Dough");
         super.setSauce("Marinara Sauce");
         super.addTopping("Tomatoes");
@@ -12,7 +12,7 @@ public class NyStyleVeggiePizza extends Pizza {
     }
 
     public void prepare() {
-        System.out.println("---------Creating Veggie Pizza----------");
+        System.out.println("---------Creating NewYork Style Veggie Pizza----------");
         super.prepare();
     }
 }

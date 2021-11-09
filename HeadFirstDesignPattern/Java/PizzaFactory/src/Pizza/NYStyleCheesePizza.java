@@ -7,4 +7,9 @@ public class NYStyleCheesePizza extends Pizza {
         super.setSauce("Marinara Sauce");
         super.addTopping("Grated Reggiano Cheese");
     }
+
+    public void prepare() {
+        System.out.println("---------Creating NewYork Style Cheese Pizza----------");
+        super.prepare();
+    }
 }
