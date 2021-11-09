@@ -1,6 +1,8 @@
-package NaiveDesign;
+package CompositeIterator;
 
-public class MenuItem {
+import java.util.Iterator;
+
+public class MenuItem extends MenuComponent {
     private String name;
     private String description;
     private boolean isVegetarian;
@@ -26,4 +28,17 @@ public class MenuItem {
         return price;
     }
 
+    public void print() {
+        System.out.print(" " + getName());
+        if (isVegetarian()) {
+            System.out.print(" (v) ");
+        }
+        System.out.println(", " + getPrice());
+        System.out.println(" -- " + getDescription());
+    }
+
+    @Override
+    public Iterator<MenuComponent> createIterator() {
+        return new NullIterator();
+    }
 }
