@@ -2,7 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="Adapter" target="15" />
+      <module name="Adapter.main" target="15" />
+      <module name="Adapter.test" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

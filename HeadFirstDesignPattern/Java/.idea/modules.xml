@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Adapter/Adapter.iml" filepath="$PROJECT_DIR$/Adapter/Adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/CaffeinatedDrinks/CaffeinatedDrinks.iml" filepath="$PROJECT_DIR$/CaffeinatedDrinks/CaffeinatedDrinks.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoffeeMachine/CoffeeMachine.iml" filepath="$PROJECT_DIR$/CoffeeMachine/CoffeeMachine.iml" />
       <module fileurl="file://$PROJECT_DIR$/CustomizableRemoteControl/CustomizableRemoteControl.iml" filepath="$PROJECT_DIR$/CustomizableRemoteControl/CustomizableRemoteControl.iml" />
@@ -13,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/Menu/Menu.iml" filepath="$PROJECT_DIR$/Menu/Menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/PizzaFactory/PizzaFactory.iml" filepath="$PROJECT_DIR$/PizzaFactory/PizzaFactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/WeatherDataDisplay/PushModel.iml" filepath="$PROJECT_DIR$/WeatherDataDisplay/PushModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TurkeyAdapter/TurkeyAdapter.iml" filepath="$PROJECT_DIR$/TurkeyAdapter/TurkeyAdapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/WeatherDataDisplay/WeatherDataDisplay.iml" filepath="$PROJECT_DIR$/WeatherDataDisplay/WeatherDataDisplay.iml" />
     </modules>
   </component>
