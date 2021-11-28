@@ -4,25 +4,30 @@ import Ducks.DuckCall;
 import Ducks.MallardDuck;
 import Ducks.RedHeadDuck;
 import Ducks.RubberDuck;
+import Factory.CountingDuckFactory;
 import Goose.Goose;
+import Interfaces.IAbstractDuckFactory;
 import Interfaces.IQuackable;
 
 public class DuckSimulator {
 
     public static void main(String[] args) {
-        //DuckSimulator simulator = new DuckSimulator(); simulator.simulate()
-        simulate();
+        DuckSimulator simulator = new DuckSimulator();
+        IAbstractDuckFactory duckFactory = new CountingDuckFactory();
+        simulator.simulate(duckFactory);
     }
 
-    private static void simulate() {
-        IQuackable mallardDuck = new QuackCounter(new MallardDuck());
-        IQuackable redHeadDuck = new QuackCounter(new RedHeadDuck());
-        IQuackable rubberDuck = new QuackCounter(new RubberDuck());
-        IQuackable duckCall = new QuackCounter(new DuckCall());
+    private static void simulate(IAbstractDuckFactory duckFactory) {
+
+        IQuackable mallardDuck = duckFactory.createMallardDuck();
+        IQuackable redHeadDuck = duckFactory.createRedHeadDuck();
+        IQuackable rubberDuck = duckFactory.createRubberDuck();
+        IQuackable duckCall = duckFactory.createDuckCall();
+        
         Goose goose = new Goose();
         IQuackable gooseDuck = new GooseAdapter(goose);
 
-        System.out.println("\nDuck Simulator: With Decorator\n");
+        System.out.println("\nDuck Simulator: With Decorator and Abstract Factory\n");
 
         simulate(mallardDuck);
         simulate(redHeadDuck);
