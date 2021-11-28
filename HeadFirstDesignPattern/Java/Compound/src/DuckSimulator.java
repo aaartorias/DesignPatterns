@@ -1,4 +1,5 @@
 import Adapters.GooseAdapter;
+import Composite.Flock;
 import Decorator.QuackCounter;
 import Ducks.DuckCall;
 import Ducks.MallardDuck;
@@ -23,17 +24,31 @@ public class DuckSimulator {
         IQuackable redHeadDuck = duckFactory.createRedHeadDuck();
         IQuackable rubberDuck = duckFactory.createRubberDuck();
         IQuackable duckCall = duckFactory.createDuckCall();
-        
-        Goose goose = new Goose();
-        IQuackable gooseDuck = new GooseAdapter(goose);
+        IQuackable gooseDuck = new GooseAdapter(new Goose());
 
-        System.out.println("\nDuck Simulator: With Decorator and Abstract Factory\n");
+        Flock flockOfDucks = new Flock();
+        flockOfDucks.add(mallardDuck);
+        flockOfDucks.add(redHeadDuck);
+        flockOfDucks.add(rubberDuck);
+        flockOfDucks.add(gooseDuck);
 
-        simulate(mallardDuck);
-        simulate(redHeadDuck);
-        simulate(rubberDuck);
-        simulate(duckCall);
-        simulate(gooseDuck);
+        Flock flockOfMallards = new Flock();
+
+        IQuackable mallardOne = duckFactory.createMallardDuck();
+        IQuackable mallardTwo = duckFactory.createMallardDuck();
+        IQuackable mallardThree = duckFactory.createMallardDuck();
+        IQuackable mallardFour = duckFactory.createMallardDuck();
+
+        flockOfMallards.add(mallardOne);
+        flockOfMallards.add(mallardTwo);
+        flockOfMallards.add(mallardThree);
+        flockOfMallards.add(mallardFour);
+
+        flockOfDucks.add(flockOfMallards);
+
+        System.out.println("\nDuck Simulator: With Decorator and Abstract Factory: Flock as composite of ducks\n");
+        simulate(flockOfDucks);
+        simulate(flockOfMallards);
 
         System.out.println("Ducks quacked " + QuackCounter.getNumberOfQuacks() + " times");
     }
